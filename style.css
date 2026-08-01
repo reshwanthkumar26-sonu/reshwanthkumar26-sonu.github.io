@@ -178,27 +178,34 @@ font-size:30px;
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-padding:30px;
+gap:30px;
+margin-top:40px;
 }
 
 .card{
 background:#111;
-border-radius:18px;
+border-radius:20px;
 overflow:hidden;
-box-shadow:0 15px 40px rgba(0,0,0,.45);
-transition:.4s;
+box-shadow:0 15px 35px rgba(0,0,0,.5);
+transition:all .4s ease;
+cursor:pointer;
 }
 
 .card:hover{
-transform:translateY(-10px) scale(1.03);
+transform:translateY(-12px) scale(1.03);
+box-shadow:0 25px 60px rgba(212,175,55,.3);
 }
 
 .card img{
 width:100%;
-height:380px;
+height:350px;
 object-fit:cover;
+transition:transform .5s ease;
 display:block;
+}
+
+.card:hover img{
+transform:scale(1.08);
 }
 /* ===== Premium Hero ===== */
 

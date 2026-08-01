@@ -352,3 +352,51 @@ font-size:45px;
 color:white;
 cursor:pointer;
 }
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(12px);
+z-index:9999;
+}
+
+nav h2{
+color:#d4af37;
+font-size:28px;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+@media(max-width:768px){
+
+nav{
+padding:15px;
+}
+
+nav ul{
+gap:12px;
+font-size:14px;
+}
+
+}
